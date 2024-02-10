@@ -1,17 +1,3 @@
-#from random import*
-#import os
-#u_pwd = input("Enter password: ")
-#pwd=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', '1', '2', '3', '4', '5', '6']
-
-#pw=""
-#while(pw!=u_pwd):
- #   pw=""
-  #  for letter in range(len(u_pwd)):
-   #     guess_pwd=pwd[randint(0,13)]
-    #    pw=str(guess_pwd)+str(pw)
-     #   print(pw)
-      #  print("Cracking Password....Please wait")
-#print("Your password is :", pw)
 import string
 from random import *
 
