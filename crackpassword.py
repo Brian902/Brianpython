@@ -12,11 +12,13 @@
      #   print(pw)
       #  print("Cracking Password....Please wait")
 #print("Your password is :", pw)
-
+import string
 from random import *
 
 u_pwd = input("Enter password: ")
-pwd = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6']
+pwd = string.ascii_letters + string.digits + string.punctuation 
+#or
+#pwd = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6']
 
 pw = ""
 attempts = 0
