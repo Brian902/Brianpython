@@ -12,8 +12,8 @@ import random
 def generate_sentence(length=""):
     seed = int(time.time())
     words = ['Brian', 'peter', 'Come', 'Basketball', 'Walk', 'Run', 'This', 'him', 'have']
-    spaces =[' ']
-    characters = words + spaces
+    #spaces =[' ']
+    characters = words #+ spaces
     random.seed(seed)
     sentence = ' '.join(random.choice(characters)for _ in range(length))
     return sentence
@@ -23,11 +23,11 @@ generated_sentence = generate_sentence(sentence_length)
 print(f"The generated sentence is: {generated_sentence}")
 
 sentence_length = len(generated_sentence.split())
-print(f"The generated sentence has: {sentence_length} letters")
+print(f"The generated sentence has: {sentence_length} words")
 
 word = generated_sentence
 final = len(word)
-print(f"The number of letters in the sentence is: {final} letters")
+print(f"The number of letters in the sentence is: {final} characters")
 
 """word = generated_sentence
 final = len(word)
