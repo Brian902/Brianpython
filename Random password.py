@@ -1,9 +1,10 @@
 """
 import time
 import random
+import string
 def generate_password(length="12"):
     seed = int(time.time())
-    characters = "abcdefghijklmnopqrstuvwxyz1234567890!£$%^&*()_+~#><,./?"
+    characters = string.ascii_letters + string.digits + string.punctuation
     random.seed(seed)
 
     password =''.join(random.choice(characters)for _ in range(length))
@@ -19,7 +20,6 @@ import string
 
 def generate_password(length=""):
     keys = string.ascii_letters + string.digits + string.punctuation
-#   keys = "abcdefghijklmnopqrstuvwxyz1234567890!$%^&*()_+-':;?/.,<>#{}[]¬`@"
     password = ''.join(secrets.choice(keys) for _ in range(length))
     return password
 
