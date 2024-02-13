@@ -4,7 +4,7 @@ import random
 import string
 
 
-def generate_password(length="12"):
+def generate_password(length=12):
     seed = int(time.time())
     characters = string.ascii_letters + string.digits + string.punctuation
     random.seed(seed)
@@ -21,7 +21,7 @@ print(f"Generated Password: {generated_password}")
 import secrets
 import string
 
-def generate_password(length=""):
+def generate_password(length=12):
     keys = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(secrets.choice(keys) for _ in range(length))
     return password
