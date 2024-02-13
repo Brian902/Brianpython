@@ -11,7 +11,7 @@ import random
 
 def generate_sentence(length=""):
     seed = int(time.time())
-    words = ['Brian', 'peter', 'Come', 'Basketball', 'Walk', 'Run', 'This', 'him', 'have']
+    words = ['Brian', 'peter', 'Come', 'Basketball', 'Walk', 'Run', 'This', 'him', 'have', 'jump', 'tail', 'Cat', 'Dog']
     #spaces =[' ']
     characters = words #+ spaces
     random.seed(seed)
@@ -29,7 +29,7 @@ word = generated_sentence
 final = len(word)
 print(f"The number of letters in the sentence is: {final} characters")
 
-"""word = generated_sentence
-final = len(word)
+#word = generated_sentence
+#final = len(word)
 
-print(final)"""
+#print(final)
