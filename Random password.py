@@ -9,7 +9,7 @@ def generate_password(length=12):
     characters = string.ascii_letters + string.digits + string.punctuation
     random.seed(seed)
 
-    password = ''.join(random.choice(characters)for _ in range(length))
+    password = ' '.join(random.choice(characters)for _ in range(length))
     return password
 
 password_length = int(input("Enter the desired length for the password: "))
@@ -23,7 +23,7 @@ import string
 
 def generate_password(length=12):
     keys = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(secrets.choice(keys) for _ in range(length))
+    password = ' '.join(secrets.choice(keys) for _ in range(length))
     return password
 
 password_length = int(input("Enter expected password length: "))
