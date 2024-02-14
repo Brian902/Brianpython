@@ -1,4 +1,4 @@
-nums = range(1,100)
+nums = range(1,10000)
 
 def is_prime(num):
     for x in range(2, num):
