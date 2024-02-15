@@ -7,9 +7,6 @@ key = chars.copy()
 
 random.shuffle(key)
 
-#print(f"chars: {chars}")
-#print(f"key: {key}")
-
 #ENCRYPT
 plain_text = input("Enter a message to encrypt: ")
 cipher_text = ""
