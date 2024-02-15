@@ -1,6 +1,5 @@
 import turtle
 
-# Set up the turtle
 screen = turtle.Screen()
 screen.bgcolor("white")
 
@@ -9,7 +8,6 @@ love.shape("turtle")
 love.color("red")
 love.speed(2)
 
-# Draw the heart shape
 love.begin_fill()
 love.fillcolor("red")
 love.left(50)
